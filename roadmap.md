@@ -6,9 +6,9 @@ Decisions (confirmed by user):
 - Starter data: clearly-labelled demo starter dataset (legal corpus, schemes, helplines), admin-expandable.
 
 ## Phase 1 — Foundation
-- [ ] Enable Lovable Cloud
-- [ ] DB migration: profiles, user_roles, chat_sessions, chat_messages, legal_documents, legal_document_chunks (pgvector), legal_sources, government_schemes, complaint_drafts, emergency_contacts + GRANTs + RLS
-- [ ] Seed labelled starter data (Acts/sections, schemes, helplines)
+- [x] Enable Lovable Cloud (email auth + Google & Lovable sign-in enabled)
+- [x] DB migration: core schema, pgvector, match_legal_chunks, GRANTs, RLS
+- [x] Seed labelled starter data (12 legal chunks, 7 schemes, 7 helplines)
 - [ ] Design tokens (deep purple / soft lavender / pink accent) in src/styles.css
 - [ ] Landing page (/), auth pages, dashboard
 

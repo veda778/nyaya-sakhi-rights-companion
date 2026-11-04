@@ -13,8 +13,6 @@ import {
   ArrowRight,
   Siren,
 } from "lucide-react";
-import { toast } from "sonner";
-import { queryClient } from "@/lib/query-client";
 import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
@@ -77,6 +75,7 @@ const modules = [
 
 function Dashboard() {
   const navigate = useNavigate();
+  const { queryClient } = Route.useRouteContext();
   const sessionUserId = useQuery({
     queryKey: ["session-user"],
     queryFn: async () => {

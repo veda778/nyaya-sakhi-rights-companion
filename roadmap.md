@@ -9,8 +9,9 @@ Decisions (confirmed by user):
 - [x] Enable Lovable Cloud (email auth + Google & Lovable sign-in enabled)
 - [x] DB migration: core schema, pgvector, match_legal_chunks, GRANTs, RLS
 - [x] Seed labelled starter data (12 legal chunks, 7 schemes, 7 helplines)
-- [ ] Design tokens (deep purple / soft lavender / pink accent) in src/styles.css
-- [ ] Landing page (/), auth pages, dashboard
+- [x] Design tokens (deep purple / soft lavender / pink accent) in src/styles.css
+- [x] Landing page (/), auth pages (/auth, /reset-password), dashboard (/dashboard)
+- [ ] Module pages: emergency (built), chat, rights, schemes, drafter, legal-aid, history
 
 ## Phase 2 — RAG chatbot
 - [ ] Gateway helpers (server-only), embeddings (pgvector), retrieval threshold
